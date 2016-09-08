@@ -1,0 +1,66 @@
+<?php
+/**
+ * The template for displaying archive pages.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package siteorigin-north
+ */
+
+get_header(); ?>
+
+<!-- Marcador de página -->
+<p style="
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 999;
+background: rgba(255, 255, 0, 0.47) none repeat scroll 0% 0%;
+margin: 0px;
+">
+	/archive-marketgarden.php CHILD
+</p>
+
+	<div id="primary" class="content-area">
+		<main id="main" role="main">
+
+		<?php if ( have_posts() ) : ?>
+			<header class="page-header">
+				<?php
+					if( siteorigin_page_setting( 'page_title' ) ) the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+				<?php siteorigin_north_breadcrumbs(); ?>
+			</header><!-- .page-header -->
+
+			<div class="container-fluid">
+			  <div class="row mg-list">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+
+						<?php
+
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'template-parts/content', 'marketgardens');
+						?>
+
+					<?php endwhile; ?>
+				</div>
+			</div>
+
+			<?php siteorigin_north_posts_pagination(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

@@ -1,0 +1,101 @@
+<?php
+/**
+ * Template part for displaying Sale Pints.
+ *
+ * @package siteorigin-north
+ */
+
+?>
+
+<div class="col-3 sp-block">
+
+  <div class="box">
+    <article id="post-<?php the_ID(); ?>" <?php post_class( 'entry' ); ?>>
+      <!-- Ver en content-page cómo se muestra el título y el thumbnail con un enlace dentro de forma accesible -->
+
+    	<div class="entry-content">
+    		<?php
+    			the_content( sprintf(
+    				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'siteorigin-north' ),
+    				get_the_title()
+    			) );
+    		?>
+
+
+        <?php
+          echo '<div class="card-block">';
+          // echo '<a class="card-image" href="' . get_the_permalink() . '"></a>';
+
+          // echo '<h4>' . get_the_title() . '</h4>';
+          echo '<div class="card-text"><h4><a class="card-permalink" href="' . get_the_permalink() . '">'. get_the_title() . '</a></h4>';
+        ?>
+
+        <!-- Thumbnail -->
+        <?php $sp_thumbnail = get_the_post_thumbnail( get_the_ID(), 'full' );
+          if ( !empty( $sp_thumbnail ) ) {
+            echo $sp_thumbnail;
+          }
+        ?>
+
+        <!-- Subtitle -->
+  			<?php $sp_subtitle = get_post_meta( get_the_ID(), 'sp_subtitle', true );
+  				if ( !empty( $sp_subtitle ) ) {
+  					echo "<h5>{$sp_subtitle}</h5>";
+  				}
+  			?>
+
+  			<!-- Street and pobox -->
+  			<?php
+  				$sp_street = get_post_meta( get_the_ID(), 'sp_street', true );
+  				$sp_pobox = get_post_meta( get_the_ID(), 'sp_pobox', true );
+  				if ( !empty( $sp_street ) ) {
+  					echo "<p>{$sp_street}, {$sp_pobox}</br>";
+  				}
+  			?>
+
+  			<!-- City -->
+  			<?php
+  				$taxonomies = get_the_terms( get_the_ID(), 'sp-city-tax', true);
+  				if  ($taxonomies) {
+  					foreach ($taxonomies as $taxonomy ) {
+  						echo $taxonomy->name . ",";
+  					}
+  				}
+  			?>
+
+  			<!-- Postal code -->
+  			<?php
+  				$sp_postalcode = get_post_meta( get_the_ID(), 'sp_postalcode', true );
+  				if ( !empty( $sp_postalcode ) ) {
+  					echo "{$sp_postalcode}</br>";
+  				}
+  			?>
+
+  			<!-- State or region -->
+  			<?php
+  				$sp_state = get_post_meta( get_the_ID(), 'sp_state', true );
+  				if ( !empty( $sp_state ) ) {
+  					echo "{$sp_state}</p>";
+  				}
+  			?>
+
+  			<!-- Phone -->
+  			<?php
+  				$sp_phone = get_post_meta( get_the_ID(), 'sp_phone', true );
+  				if ( !empty( $sp_phone ) ) {
+  					echo "<a href='tel:{$sp_phone}'>{$sp_phone}</a></br>";
+  				}
+  			?>
+
+    		<?php
+    			wp_link_pages( array(
+    				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'siteorigin-north' ),
+    				'after'  => '</div>',
+    			) );
+    		?>
+    	</div><!-- .entry-content -->
+
+    </article><!-- #post-## -->
+  </div>
+
+</div>

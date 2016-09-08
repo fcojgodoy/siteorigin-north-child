@@ -1,0 +1,274 @@
+/*
+ Theme Name:   Siteorigin North Child
+ Description:  Siteorigin North Child for La Xarxeta
+ Author:       Fco. Godoy
+ Author URI:   http://fcojgodoy.github.io/web
+ Template:     siteorigin-north
+ Text Domain:  siteorigin-north
+*/
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+/*
+ * Cassannet font
+ */
+@font-face {
+  font-family: "Cassannet";
+  src:url("css/fonts/cassannet/Cassannet.eot");
+  src:url("css/fonts/cassannet/Cassannet.eot?#iefix") format("embedded-opentype"),
+    url("css/fonts/cassannet/Cassannet.woff") format("woff"),
+    url("css/fonts/cassannet/Cassannet.ttf") format("truetype"),
+    url("css/fonts/cassannet/Cassannet.svg#Cassannet") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*
+ * Circular Book font
+ */
+@font-face {
+  font-family: "Circular-book";
+  src:url("css/fonts/circular-book.eot");
+  src:url("css/fonts/circular-book.eot?#iefix") format("embedded-opentype"),
+    url("css/fonts/circular-book.woff") format("woff"),
+    url("css/fonts/circular-book.ttf") format("truetype"),
+    url("css/fonts/circular-book.svg#Circular-book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*--------------------------------------------------------------
+# Types
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cassannet, serif;
+}
+h1.entry-title {
+  font-size: 200%;
+}
+h2 {
+  font-size: 170%;
+}
+h3 {
+  font-size: 150%;
+}
+h4 {
+  font-size: 130%;
+}
+h5 {
+  font-size: 110%;
+}
+h6 {
+  font-size: 105%;
+}
+
+/*--------------------------------------------------------------
+# New fixes
+--------------------------------------------------------------*/
+#mes-info-button {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Add this to fix img{width:100%} from simplegrid.min.css:9 */
+img {
+  width: auto;
+}
+
+/*--------------------------------------------------------------
+# New blocks
+--------------------------------------------------------------*/
+
+/*
+ * NewCard block
+ * Content: link with background-image and a text block ('h4 > a' and 'h5 > a')
+ *
+ */
+    /* Colors */
+    .mg-list .mg-block:nth-child(1) .card-block {
+      background-color: #F0715E;
+      background-image: url(images/botanicals1.png);
+    }
+    .mg-list .mg-block:nth-child(1) .card-block:hover {
+      background-color: #dc5d4a;
+    }
+
+    .mg-list .mg-block:nth-child(2) .card-block {
+      background-color: #75babd;
+      background-image: url(images/botanicals2.png);
+    }
+    .mg-list .mg-block:nth-child(2) .card-block:hover {
+      background-color: #61a6a9;
+    }
+
+    .mg-list .mg-block:nth-child(3) .card-block {
+      background-color: #fdde5a;
+      background-image: url(images/botanicals3.png);
+    }
+    .mg-list .mg-block:nth-child(3) .card-block:hover {
+      background-color: #e9ca46;
+    }
+
+    .mg-list .mg-block:nth-child(4) .card-block {
+      background-color: #bdae75;
+      background-image: url(images/botanicals4.png);
+    }
+    .mg-list .mg-block:nth-child(4) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(5) .card-block {
+      background-color: #99B26E;
+      background-image: url(images/botanicals5.png);
+    }
+    .mg-list .mg-block:nth-child(5) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(6) .card-block {
+      background-color: #c78ed2;
+      background-image: url(images/botanicals6.png);
+    }
+    .mg-list .mg-block:nth-child(6) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(7) .card-block {
+      background-color: #9de7c0;
+      background-image: url(images/botanicals7.png);
+    }
+    .mg-list .mg-block:nth-child(7) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(8) .card-block {
+      background-color: #c99de7;
+      background-image: url(images/botanicals8.png);
+    }
+    .mg-list .mg-block:nth-child(8) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(9) .card-block {
+      background-color: #9dabe7;
+      background-image: url(images/botanicals9.png);
+    }
+    .mg-list .mg-block:nth-child(9) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(10) .card-block {
+      background-color: #e7c79d;
+      background-image: url(images/botanicals10.png);
+    }
+    .mg-list .mg-block:nth-child(10) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(11) .card-block {
+      background-color: #9dcde7;
+      background-image: url(images/botanicals11.png);
+    }
+    .mg-list .mg-block:nth-child(11) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(12) .card-block {
+      background-color: #b6efb7;
+      background-image: url(images/botanicals12.png);
+    }
+    .mg-list .mg-block:nth-child(12) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(13) .card-block {
+      background-color: #b9d44f;
+      background-image: url(images/botanicals13.png);
+    }
+    .mg-list .mg-block:nth-child(13) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(14) .card-block {
+      background-color: #d44f79;
+      background-image: url(images/botanicals14.png);
+    }
+    .mg-list .mg-block:nth-child(14) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    .mg-list .mg-block:nth-child(15) .card-block {
+      background-color: #e1b6ff;
+      background-image: url(images/botanicals15.png);
+    }
+    .mg-list .mg-block:nth-child(15) .card-block:hover {
+      background-color: #a99a61;
+    }
+
+    /* Main styles */
+    .card-block {
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    .card-block:hover {
+      transition: background-color 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .card-block .card-image {
+      display: block;
+      min-height: 250px;
+    }
+    .card-block .card-text {
+      background-color: inherit;
+    }
+    .card-block .card-text > * {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .card-block .card-text a {
+      color: #000;
+      display: block;
+      padding: 2px 30px;
+    }
+    .card-block .card-text a:hover {
+      text-decoration: none;
+    }
+    .card-block .card-text h4 a {
+      padding-top: 15px;
+    }
+    .card-block .card-text h5 a {
+      padding-bottom: 20px;
+    }
+
+
+/*--------------------------------------------------------------
+# Salepoint searching block
+--------------------------------------------------------------*/
+.uwpqsf_class > label {
+    float: left;
+    position: relative;
+    left: 5px;
+    width: auto;
+    padding: 5px 10px;
+}
+.uwpqsf_class > label input[type="checkbox"],
+.uwpqsf_class > label input[type="radio"] {
+  position: relative;
+  right: 5px;
+}
+
+.uwpqsf_class {
+  overflow: auto;
+}
+
+.uwpqsf_submit {
+  margin-top: 20px;
+}
+
+#uwpqsf_id {
+  padding: 20px;
+}
