@@ -1,6 +1,5 @@
 # Copyright (C) 2015 siteorigin-north
 # This file is distributed under the same license as the siteorigin-north package.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: siteorigin-north\n"
@@ -8,8 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: SiteOrigin <support@siteorigin.com>\n"
+"PO-Revision-Date: 2016-09-08 12:03+0200\n"
 "Language-Team: SiteOrigin <support@siteorigin.com>\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -17,133 +15,135 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "POT-Creation-Date: \n"
 "X-Generator: Poedit 1.8.7\n"
+"Last-Translator: Fco. J. Godoy <francisco.godoy@openmailbox.org>\n"
+"Language: es_ES\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: footer.php:23
 msgid "Footer Sidebar"
-msgstr ""
+msgstr "Barra Lateral del Pie de Página"
 
 #: footer.php:46
 msgid "Scroll to top"
-msgstr ""
+msgstr "Ir arriba"
 
 #: header.php:24
 msgid "Skip to content"
-msgstr ""
+msgstr "Saltar contenido"
 
 #: header.php:54
 msgid "Menu"
-msgstr ""
+msgstr "Menú"
 
 #: header.php:70
 msgid "View shopping cart"
-msgstr ""
+msgstr "Ver carrito de compra"
 
 #: header.php:72
 msgid " View Cart "
-msgstr ""
+msgstr "Ver Carrito"
 
 #: header.php:84
 msgid "Open search bar"
-msgstr ""
+msgstr "Abrir barra de búsqueda"
 
 #: header.php:97
 msgid "Search for:"
-msgstr ""
+msgstr "Búsqueda para:"
 
 #: header.php:100
 msgid "Close search bar"
-msgstr ""
+msgstr "Cerrar barra de búsqueda"
 
 #: page_salepoints.php:28 page_salepoints.php:135
 #: template-parts/content-marketgarden.php:134
 #: template-parts/content-marketgardens.php:48
 #: template-parts/content-salepoint.php:170
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
 #: page_salepoints.php:62 template-parts/content-marketgardens.php:19
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Continuar leyendo <span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/content-marketgarden.php:37
 msgid "The market garden"
-msgstr ""
+msgstr "El huerto"
 
 #: template-parts/content-marketgarden.php:42
 msgid "Who we are"
-msgstr ""
+msgstr "Quiénes somos"
 
 #: template-parts/content-marketgarden.php:50
 msgid "Where and since when?"
-msgstr ""
+msgstr "¿Dónde y desde cuándo?"
 
 #: template-parts/content-marketgarden.php:58
 msgid "Description of the land"
-msgstr ""
+msgstr "Descripción del terreno"
 
 #: template-parts/content-marketgarden.php:66
 msgid "Type of sales"
-msgstr ""
+msgstr "Tipos de venta"
 
 #: template-parts/content-marketgarden.php:75
 msgid "Node"
-msgstr ""
+msgstr "Nodo"
 
 #: template-parts/content-marketgarden.php:95
 msgid "Sale points"
-msgstr ""
+msgstr "Puntos de venta"
 
 #: template-parts/content-marketgarden.php:113
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #: template-parts/content-marketgarden.php:114
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 #: template-parts/content-marketgarden.php:117
 msgid "Telephones"
-msgstr ""
+msgstr "Teléfonos"
 
 #: template-parts/content-marketgarden.php:127
 msgid "Web page"
-msgstr ""
+msgstr "Página web"
 
 #: template-parts/content-salepoint.php:40
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: template-parts/content-salepoint.php:50
 msgid "Situation and contact"
-msgstr ""
+msgstr "Situación y contacto"
 
 #: template-parts/content-salepoint.php:101
 msgid "Products"
-msgstr ""
+msgstr "Productos"
 
 #: template-parts/content-salepoint.php:121
 msgid "Our market gardens"
-msgstr ""
+msgstr "Nuestros huertos"
 
 #: template-parts/content-salepoint.php:131
 msgid "Timetable"
-msgstr ""
+msgstr "Horario"
 
 #: template-parts/content-salepoint.php:132
 msgid "From"
-msgstr ""
+msgstr "Desde"
 
 #: template-parts/content-salepoint.php:140
 msgid "to"
-msgstr ""
+msgstr "a"
 
 #: template-parts/content-salepoint.php:148
 msgid "Days of the week"
-msgstr ""
+msgstr "Días de la semana"
 
 #: template-parts/content-salepoint.php:161
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"
